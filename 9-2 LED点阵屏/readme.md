@@ -13,3 +13,9 @@ void matrixLED_writeColumn(unsigned char column,unsigned char _data);
 //其实是初始化74HC595的两个时钟
 void matrixLED_init();
 ```
+> 74HC595是一个8位串行输入、并行输出的位移缓存器
++ 关于74HC595 
+
+  + 每次SRCLK上升沿读入SER的数据
+  + RCLK上升沿输出读入的数据
+  + 额外接电源，驱动能力更强
